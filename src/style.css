@@ -1,5 +1,5 @@
 html {
-    justify-content: center;
+position: initial;
 }
 
 body {
@@ -7,5 +7,17 @@ body {
 }
 
 header {
-    justify-content: center;
+border-radius: 10px;
+border-bottom: 10px;
+}
+h1 {
+text-align: center;
+font-size: xx-large;
+font-style: oblique;
+}
+div {
+justify-content: center;
+text-align: center;
+font-style: oblique;
+font-size: large;
 }

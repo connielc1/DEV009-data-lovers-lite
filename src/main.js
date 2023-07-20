@@ -5,10 +5,10 @@ const cards = data.cards
 console.log(cards)
 cards.forEach(element => {
 
-    contenedor.innerHTML+=`
+    contenedor.innerHTML += `
     <div>
         <img src=${element.img} alt=${element.name}>
         <p>${element.name}</p>  
-    </div>` ;   
+    </div>` ;
 
 });
