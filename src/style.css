@@ -1,23 +1,116 @@
 html {
-position: initial;
+    position: initial;
 }
 
 body {
-    background-color: blueviolet;
+    background-color: #27012e;
 }
 
 header {
-border-radius: 10px;
-border-bottom: 10px;
+    border-radius: 5px;
+    border-bottom: 5px;
 }
+
 h1 {
-text-align: center;
-font-size: xx-large;
-font-style: oblique;
+    text-align: center;
+    font-size: 36px;
+    font-style: oblique;
+    color: #D4ADFC;
+    text-shadow: 2px 2px 2px #3E065F;
+    padding: 5px 0;
+    max-width: 100%;
+    margin-bottom: auto;
 }
-div {
-justify-content: center;
-text-align: center;
-font-style: oblique;
-font-size: large;
+
+#root {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    /*ancho máximo de las cartas */
+    margin: 0 auto;
+    /* Centra el contenedor de cartas en la página */
 }
+
+#root>div {
+    flex: 0 0 calc(33.33% - 20px);
+    /* 33.33% para tres cartas por fila*/
+    max-width: 250px;
+    /*Ajusta el ancho máximo de las cartas*/
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+    font-style: italic;
+    background-color: #630b86;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 8px;
+    color: #D4ADFC;
+    padding: 10px;
+    /* Reduce el relleno para que las cartas sean más pequeñas */
+    border-radius: 5px;
+}
+
+#root>div img {
+    max-width: 100%;
+    /*imágenes son ajustadas al ancho de su contenedor */
+    height: auto;
+}
+
+/* Estilos para el menú */
+.menu {
+    text-align: center;
+    background-color: #27012e;
+    padding: 30px 0;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #D4ADFC;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #27012e;
+}
+
+.menu a:hover {
+    background-color: #3E065F;
+    color: #D4ADFC;
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.search-container input[type="text"] {
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.search-container button {
+    padding: 5px 10px;
+    background-color: #5C469C;
+    color: #D4ADFC;
+    border-radius: 5px;
+}
+
+.search-container button:hover {
+    background-color: #3E065F;
+}
+
+.placeholder {
+    background-color: #D4ADFC;
+} /*aqui no se ve/*
