@@ -11,14 +11,16 @@ cards.forEach(element => {
         <p>${element.name}</p>  
         <ul>
         <li>Tipo: ${element.type}</li>
-        <li>Valor</li>
-        <li>Descripción</li>
-        <li>Significado</li>
-        <li>Significado inverso</li>
+        <li>Valor: ${element.value}</li>
+        <li>Nombre corto: ${element.name_short}</li> 
       </ul>
-    ` ; 
-    carta.addEventListener("click",function(){
-        console.log("hola")
+    ` ;
+    carta.addEventListener("click", function () {
     });
-contenedor.appendChild(carta);
+    contenedor.appendChild(carta);
 });
+carta.document.createElement("Descripción") 
+    carta.style.display = "block";
+/* <li>Significado: ${element.meaning_up}</li> 
+        <li>Significado inverso: ${element.meaning_rev}</li>
+        <li>Descripción: ${element.desc}</li> */

@@ -35,11 +35,11 @@ h1 {
 #contenido>div {
     flex: 0 0 calc(33.33% - 20px);
     /* 33.33% para tres cartas por fila*/
-    max-width: 250px;
+    max-width: 245px;
     /*Ajusta el ancho máximo de las cartas*/
     margin-bottom: 20px;
     justify-content: center;
-    text-align: center;
+    text-align:center;
     font-style: italic;
     background-color: #630b86;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 8px;
@@ -47,6 +47,7 @@ h1 {
     padding: 10px;
     /* Reduce el relleno para que las cartas sean más pequeñas */
     border-radius: 5px;
+    display:inline-block;
 }
 
 #contenido>div img {
@@ -69,6 +70,7 @@ h1 {
 }
 
 .menu li {
+    list-style-type: none;
     display: inline-block;
     margin: 0 10px;
 }
@@ -113,4 +115,4 @@ h1 {
 
 .placeholder {
     background-color: #D4ADFC;
-} /*aqui no se ve/*
+} 
