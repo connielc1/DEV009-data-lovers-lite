@@ -39,7 +39,7 @@ h1 {
     /*Ajusta el ancho máximo de las cartas*/
     margin-bottom: 20px;
     justify-content: center;
-    text-align:center;
+    text-align: center;
     font-style: italic;
     background-color: #630b86;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 8px;
@@ -47,46 +47,13 @@ h1 {
     padding: 10px;
     /* Reduce el relleno para que las cartas sean más pequeñas */
     border-radius: 5px;
-    display:inline-block;
+    display: inline-block;
 }
 
 #contenido>div img {
     max-width: 100%;
     /*imágenes son ajustadas al ancho de su contenedor */
     height: auto;
-}
-
-/* Estilos para el menú */
-.menu {
-    text-align: center;
-    background-color: #27012e;
-    padding: 30px 0;
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu li {
-    list-style-type: none;
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #D4ADFC;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 5px;
-    background-color: #27012e;
-}
-
-.menu a:hover {
-    background-color: #3E065F;
-    color: #D4ADFC;
 }
 
 .search-container {
@@ -115,4 +82,4 @@ h1 {
 
 .placeholder {
     background-color: #D4ADFC;
-} 
+}
