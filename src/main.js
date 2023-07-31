@@ -19,8 +19,15 @@ cards.forEach(element => {
     });
     contenedor.appendChild(carta);
 });
-carta.document.createElement("Descripción") 
-    carta.style.display = "block";
+/*carta.document.createElement("Descripción") 
+    carta.style.display = "block"; */
 /* <li>Significado: ${element.meaning_up}</li> 
         <li>Significado inverso: ${element.meaning_rev}</li>
         <li>Descripción: ${element.desc}</li> */
+const selectTipos=document.getElementById("Tipos")
+selectTipos.addEventListener("change", () => {
+const opcionArcanos= selectTipos.value;
+console.log(opcionArcanos)
+const cartasFiltradas=cards.filter(cards => cards.type === opcionArcanos)
+console.log(cartasFiltradas)
+});
