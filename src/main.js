@@ -1,51 +1,55 @@
 import data from '/data/tarot/tarot.js';
 const contenedor = document.getElementById("contenido");
-console.log(data)
 const cards = data.cards
-console.log(cards)
+const dibujarTarjetas = (element) => {
+    contenedor.innerHTML += `
+            <div>
+                <img src=${element.img} alt=${element.name}>
+                <p>${element.name}</p>  
+                <ul>
+                <li>Tipo: ${element.type}</li>
+                <li>Valor: ${element.value}</li>
+                <li>Nombre corto: ${element.name_short}</li> 
+              </ul> </div>
+            ` ;
+}
 cards.forEach(element => {
-    let carta = document.createElement("div");
-    carta.innerHTML += `
-
-        <img src=${element.img} alt=${element.name}>
-        <p>${element.name}</p>  
-        <ul>
-        <li>Tipo: ${element.type}</li>
-        <li>Valor: ${element.value}</li>
-        <li>Nombre corto: ${element.name_short}</li> 
-      </ul>
-    ` ;
-    carta.addEventListener("click", function () {
-    });
-    contenedor.appendChild(carta);
+    dibujarTarjetas(element)
 });
-/*carta.document.createElement("Descripción") 
-    carta.style.display = "block"; */
-/* <li>Significado: ${element.meaning_up}</li> 
-        <li>Significado inverso: ${element.meaning_rev}</li>
-        <li>Descripción: ${element.desc}</li> */
 const selectTipos = document.getElementById("Tipos")
 selectTipos.addEventListener("change", () => {
     const opcionArcanos = selectTipos.value;
-    console.log(opcionArcanos)
-    const cartasFiltradas = cards.filter(cards => cards.type === opcionArcanos)
-    console.log(cartasFiltradas)
-    let carta = document.createElement("div");
-        carta.innerHTML=""
-    cartasFiltradas.forEach(element => {
-        
-        carta.innerHTML += `
-    
-            <img src=${element.img} alt=${element.name}>
-            <p>${element.name}</p>  
-            <ul>
-            <li>Tipo: ${element.type}</li>
-            <li>Valor: ${element.value}</li>
-            <li>Nombre corto: ${element.name_short}</li> 
-          </ul>
-        ` ;
-        carta.addEventListener("click", function () {
+    contenedor.innerHTML = ""
+    if (opcionArcanos == "todas") {
+        cards.forEach(element => {
+            dibujarTarjetas(element)
         });
-        contenedor.appendChild(carta);
+    } else {
+        const cartasFiltradas = cards.filter(cards => cards.type === opcionArcanos)
+        cartasFiltradas.forEach(element => {
+            dibujarTarjetas(element)
+
+        });
+    }
+});
+const ordenAlfabetico = document.getElementById("alfabetico")
+ordenAlfabetico.addEventListener("change", () => {
+    const selectOrden = ordenAlfabetico.value;
+    if (selectOrden === "a-z") {
+        cards.sort((a, b) => a.name > b.name ? 1 : -1);
+    } else if (selectOrden === "z-a") {
+        cards.sort((a, b) => a.name < b.name ? 1 : -1);
+    }
+    contenedor.innerHTML = "";
+    cards.forEach(element => {
+        dibujarTarjetas(element);
     });
 });
+    /*carta.addEventListener("click", function () {
+});
+contenedor.appendChild(carta); */
+/*carta.document.createElement("Descripción")
+carta.style.display = "block"; */
+/* <li>Significado: ${element.meaning_up}</li> 
+        <li>Significado inverso: ${element.meaning_rev}</li>
+<li>Descripción: ${element.desc}</li> */
