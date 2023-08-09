@@ -32,7 +32,7 @@ selectTipos.addEventListener("change", () => {
         });
     }
 });
-const ordenAlfabetico = document.getElementById("alfabetico")
+let ordenAlfabetico = document.getElementById("alfabetico")
 ordenAlfabetico.addEventListener("change", () => {
     const selectOrden = ordenAlfabetico.value;
     if (selectOrden === "a-z") {
