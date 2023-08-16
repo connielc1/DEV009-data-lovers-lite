@@ -4,6 +4,6 @@ export const example = () => {
   return 'example';
 };
 
-export const anotherExample = () => {
-  return 'OMG';
+export const filtrarPorTipo = (cards,opcionArcanos) => {
+  return cards.filter(cards => cards.type === opcionArcanos);
 };

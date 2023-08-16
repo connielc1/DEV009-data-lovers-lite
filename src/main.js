@@ -1,8 +1,9 @@
 import data from '/data/tarot/tarot.js';
+import { filtrarPorTipo } from './data.js';
 const contenedor = document.getElementById("contenido");
 const cards = data.cards
 const dibujarTarjetas = (element) => {
-    contenedor.innerHTML += `
+  contenedor.innerHTML += `
             <div>
                 <img src=${element.img} alt=${element.name}>
                 <p>${element.name}</p>  
@@ -14,38 +15,38 @@ const dibujarTarjetas = (element) => {
             ` ;
 }
 cards.forEach(element => {
-    dibujarTarjetas(element)
+  dibujarTarjetas(element)
 });
 const selectTipos = document.getElementById("Tipos")
 selectTipos.addEventListener("change", () => {
-    const opcionArcanos = selectTipos.value;
-    contenedor.innerHTML = ""
-    if (opcionArcanos == "todas") {
-        cards.forEach(element => {
-            dibujarTarjetas(element)
-        });
-    } else {
-        const cartasFiltradas = cards.filter(cards => cards.type === opcionArcanos)
-        cartasFiltradas.forEach(element => {
-            dibujarTarjetas(element)
-
-        });
-    }
-});
-let ordenAlfabetico = document.getElementById("alfabetico")
-ordenAlfabetico.addEventListener("change", () => {
-    const selectOrden = ordenAlfabetico.value;
-    if (selectOrden === "a-z") {
-        cards.sort((a, b) => a.name > b.name ? 1 : -1);
-    } else if (selectOrden === "z-a") {
-        cards.sort((a, b) => a.name < b.name ? 1 : -1);
-    }
-    contenedor.innerHTML = "";
+  const opcionArcanos = selectTipos.value;
+  contenedor.innerHTML = ""
+  if (opcionArcanos === "todas") {
     cards.forEach(element => {
-        dibujarTarjetas(element);
+      dibujarTarjetas(element)
     });
+  } else {
+    const cartasFiltradas = filtrarPorTipo(cards, opcionArcanos)
+    cartasFiltradas.forEach(element => {
+      dibujarTarjetas(element)
+
+    });
+  }
 });
-    /*carta.addEventListener("click", function () {
+const ordenAlfabetico = document.getElementById("alfabetico")
+ordenAlfabetico.addEventListener("change", () => {
+  const selectOrden = ordenAlfabetico.value;
+  if (selectOrden === "a-z") {
+    cards.sort((a, b) => a.name > b.name ? 1 : -1);
+  } else if (selectOrden === "z-a") {
+    cards.sort((a, b) => a.name < b.name ? 1 : -1);
+  }
+  contenedor.innerHTML = "";
+  cards.forEach(element => {
+    dibujarTarjetas(element);
+  });
+});
+/*carta.addEventListener("click", function () {
 });
 contenedor.appendChild(carta); */
 /*carta.document.createElement("Descripción")
