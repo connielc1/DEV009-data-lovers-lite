@@ -1,4 +1,4 @@
-import data from '/data/tarot/tarot.js';
+import data from './data/tarot/tarot.js';
 import { filtrarPorTipo } from './data.js';
 import { selectOrdenAlfabetico } from './data.js';
 const contenedor = document.getElementById("contenido");
