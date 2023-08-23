@@ -1,5 +1,6 @@
 import data from '/data/tarot/tarot.js';
 import { filtrarPorTipo } from './data.js';
+import { selectOrdenAlfabetico } from './data.js';
 const contenedor = document.getElementById("contenido");
 const cards = data.cards
 const dibujarTarjetas = (element) => {
@@ -35,22 +36,10 @@ selectTipos.addEventListener("change", () => {
 });
 const ordenAlfabetico = document.getElementById("alfabetico")
 ordenAlfabetico.addEventListener("change", () => {
-  const selectOrden = ordenAlfabetico.value;
-  if (selectOrden === "a-z") {
-    cards.sort((a, b) => a.name > b.name ? 1 : -1);
-  } else if (selectOrden === "z-a") {
-    cards.sort((a, b) => a.name < b.name ? 1 : -1);
-  }
+  const selectOrden = ordenAlfabetico.value
+  const cartasOrdenadas = selectOrdenAlfabetico(cards, selectOrden)
   contenedor.innerHTML = "";
-  cards.forEach(element => {
+  cartasOrdenadas.forEach(element => {
     dibujarTarjetas(element);
   });
 });
-/*carta.addEventListener("click", function () {
-});
-contenedor.appendChild(carta); */
-/*carta.document.createElement("Descripción")
-carta.style.display = "block"; */
-/* <li>Significado: ${element.meaning_up}</li> 
-        <li>Significado inverso: ${element.meaning_rev}</li>
-<li>Descripción: ${element.desc}</li> */
