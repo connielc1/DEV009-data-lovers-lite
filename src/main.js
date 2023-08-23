@@ -1,6 +1,5 @@
 import data from './data/tarot/tarot.js';
-import { filtrarPorTipo } from './data.js';
-import { selectOrdenAlfabetico } from './data.js';
+import { filtrarPorTipo, selectOrdenAlfabetico } from './data.js';
 const contenedor = document.getElementById("contenido");
 const cards = data.cards
 const dibujarTarjetas = (element) => {

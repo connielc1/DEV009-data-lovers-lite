@@ -1,5 +1,4 @@
-import { filtrarPorTipo } from '../src/data.js';
-import { selectOrdenAlfabetico } from '../src/data.js';
+import { filtrarPorTipo, selectOrdenAlfabetico } from '../src/data.js';
 const data = [
   {
     "name": "The Magician",
