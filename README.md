@@ -1,5 +1,26 @@
 # Data Lovers
 
+# Tarot:
+
+
+El producto 'Tarot' es una página web que muestra información de las cartas de tarot. Permite a los usuarios buscar la data que necesitan con los filtros divididos en todas las cartas, los arcanos mayores y menores y orden alfabético ascendente y descendente. También se ha proporcionado un diseño acorde al mundo esotérico que proporcione una inmersión mayor al usuario en su interacción con la página. Se puede encontrar una división en tres columnas con la imagen de la carta y su respectivo nombre. Debajo de esto, se encuentra el tipo de carta, valor y nombre corto en el contenido presentado. 
+
+### Tipos de usuario
+Si bien esta página está dirigida para todo público, hace un enfoque en las personas que puedan interesarse en el mundo de la adivinación e interpretación de diferentes hechos que se consulten, en este caso, de las barajas de tarot.
+Las personas interesadas en conocer de mejor manera las cartas de tarot y su información respectiva, utilizarán este producto que les mostrará la información necesaria para poder aprender mucho mejor de este método adivinatorio, en un sentido de aprendizaje básico en cómo las 78 cartas tienen valores diferentes que dividen sus significado (por ejemplo, en los arcanos).
+
+## Diseño
+Esta aplicación se basa en una paleta de colores fría, con tonos morados y lilas de diferente tonalidad. Los colores que normalmente se relacionan a este tipo de enseñanzas esotéricas son colores fríos, oscuros o brillantes. Eso genera un aura de misterio y la presencia de lo "oculto" que se puede revelar mediante el conocimiento y el aprendizaje que puede proporcionar el área del tarot. Los filtros están colocados en un menú que se ve a simple vista, junto a un buscador que es utilizado para encontrar cartas por nombre.
+
+![Alt text](image-1.png)
+
+
+### Paleta de colores
+
+![Alt text](paleta1.png)
+
+
+
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
@@ -163,7 +184,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Array.prototype.reduce() - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 </p></details>
 
-- [ ] **Objetos (key, value)**
+- [x] **Objetos (key, value)**
 
   <details><summary>Links</summary><p>
 
@@ -186,7 +207,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Tomando decisiones en tu código — condicionales - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
 </p></details>
 
-- [ ] **Uso de bucles/ciclos (while, for, for..of)**
+- [x] **Uso de bucles/ciclos (while, for, for..of)**
 
   <details><summary>Links</summary><p>
 
@@ -204,7 +225,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Funciones — bloques de código reutilizables - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Functions)
 </p></details>
 
-- [ ] **Pruebas unitarias (unit tests)**
+- [x] **Pruebas unitarias (unit tests)**
 
   <details><summary>Links</summary><p>
 
@@ -231,22 +252,22 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 - [x] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
 
-- [ ] **Git: Integración de cambios entre ramas (branch, checkout, fetch, merge, reset, rebase, tag)**
+- [x] **Git: Integración de cambios entre ramas (branch, checkout, fetch, merge, reset, rebase, tag)**
 
 - [x] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
 
-- [ ] **GitHub: Despliegue con GitHub Pages**
+- [x] **GitHub: Despliegue con GitHub Pages**
 
   <details><summary>Links</summary><p>
 
   * [Sitio oficial de GitHub Pages](https://pages.github.com/)
 </p></details>
 
-- [ ] **GitHub: Colaboración en Github (branches | forks | pull requests | code review | tags)**
+- [x] **GitHub: Colaboración en Github (branches | forks | pull requests | code review | tags)**
 
 ### Centrado en el usuario
 
-- [ ] **Diseñar y desarrollar un producto o servicio poniendo a las usuarias en el centro**
+- [x] **Diseñar y desarrollar un producto o servicio poniendo a las usuarias en el centro**
 
 ### Diseño de producto
 
@@ -349,24 +370,24 @@ en la sección de [Consideraciones técnicas](#srcdatajs).
 
 ## 9. Checklist
 
-* [ ] Usa VanillaJS.
-* [ ] Pasa linter (`npm run pretest`)
-* [ ] Pasa tests (`npm test`)
-* [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
+* [x] Usa VanillaJS.
+* [x] Pasa linter (`npm run pretest`)
+* [x] Pasa tests (`npm test`)
+* [x] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
   lines y branches.
-* [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-* [ ] Incluye historias de usuario en `README.md`.
-* [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+* [x] Incluye _Definición del producto_ clara e informativa en `README.md`.
+* [x] Incluye historias de usuario en `README.md`.
+* [x] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
   `README.md`.
 * [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
   en `README.md`.
 * [ ] Incluye link a Zeplin en `README.md`.
 * [ ] Incluye el listado de problemas que detectaste a través de tests de
   usabilidad en el `README.md`.
-* [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-* [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-* [ ] UI: Permite filtrar data en base a una condición.
-* [ ] UI: Es _responsive_.
+* [x] UI: Muestra lista y/o tabla con datos y/o indicadores.
+* [x] UI: Permite ordenar data por uno o más campos (asc y desc).
+* [x] UI: Permite filtrar data en base a una condición.
+* [x] UI: Es _responsive_.
 
 ## 7. Consideraciones técnicas
 
