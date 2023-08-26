@@ -19,7 +19,15 @@ Esta aplicación se basa en una paleta de colores fría, con tonos morados y lil
 
 ![Alt text](paleta1.png)
 
+# Página web
+Se puede acceder a la página web a través de este [enlace](https://connielc1.github.io/DEV009-data-lovers-lite/). 
+Una vez dentro, podrás ver el menú con los filtros necesarios para hacer la búsqueda del usuario mucho más sencilla, con una vista previa de las cartas que son visualizadas por defecto.
 
+## Historia de usuario
+
+He basado la investigación de usuarios en una página web muy popular para información de tarot, astros y aprendizajes esotéricos llamada [Los arcanos](https://www.losarcanos.com/carta-astral.php). Si bien posee una interfaz algo antigua, tiene contenido de diversos temas con un menú desplegado al principio de la página web. En este caso, tiene una paleta de colores fría y con tonalidades azules, por lo que decidí hacer un cambio y utilizar tonos morados y lilas. Eso hace que se siga relacionando los colores fríos, pero sin copiar exactamente los colores de la página mencionada.
+
+Los usuarios buscan información que les proporcione conocimientos de distintos temas, donde su búsqueda se haga sencilla y precisa respecto a lo que buscan de información. De esa forma, utilicé esto para que la página tuviese filtros que dividan la información principal de las barajas de tarot: Los arcanos. También la búsqueda por orden alfabético genera un resultado mejor logrado de lo que se está buscando en particular. 
 
 ## Índice
 
